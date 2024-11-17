@@ -7,6 +7,7 @@
 //typedef uint32_t in_addr_t;
 
 //from ubuntu's net/ethernet.h
+#define ETH_ALEN 48
 struct ether_addr
 {
   u_int8_t ether_addr_octet[ETH_ALEN];

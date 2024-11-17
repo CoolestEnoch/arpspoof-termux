@@ -1,3 +1,26 @@
+# If you want to compile with Termux
+> Tested on Xiaomi Pad 5 Pro 5G (enuma) and Xiaomi Mi 10 Ultra (cas), both on Android 13 with Termux `0.118.0`.
+
+
+***Note: ROOT PERMISSION REQUIRED!***
+
+
+~~*Just throw away your NDKs (joke*~~
+
+
+1. install the dependencies:
+``` shell
+apt install libpcap libnet build-essential
+```
+
+2. Now, start compile!
+You only need to compile the `JNI` folder due to the source code is there ;)
+``` shell
+cd jni && gcc -I./include -lnet -lpcap *.c -o arpspoof
+```
+
+****
+
 # dSploit ArpSpoof forked module for Android 6-11
 
 This file was part of [dSploit](https://github.com/evilsocket/dsploit) and it's licensed under the GPL v3.

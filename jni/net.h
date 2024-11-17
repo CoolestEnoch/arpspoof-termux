@@ -36,6 +36,10 @@ typedef struct
 }
 network_entry_t;
 
+int address_hash( void* key );
+
+bool address_hash_equals( void* keyA, void* keyB );
+
 int 		 net_get_details( char *iface, int *netmask, int *ifaddr, int *nhosts );
 void	   net_wake( char *iface, int nhosts, int ifaddr, int netmask, in_addr_t gateway );
 Hashmap *net_get_mapping( char *iface, int nhosts, int ifaddr, int netmask, in_addr_t gateway, int *count );

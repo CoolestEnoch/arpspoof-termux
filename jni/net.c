@@ -17,6 +17,7 @@
  * along with dSploit.  If not, see <http://www.gnu.org/licenses/>.
  */
 #include "net.h"
+#include "arp.h"
 
 inline int address_hash( void* key ) {
 	return (int)key;
